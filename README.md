@@ -1,4 +1,4 @@
-# MVC blog
+# MVC blog [![CI](https://github.com/daggerok/mvc-blog/workflows/CI/badge.svg)](https://github.com/daggerok/mvc-blog/actions?query=workflow%3ACI)
 Using commonmark, thymeleaf and spring-boot to build MVC markdown blog
 
 ## resources
