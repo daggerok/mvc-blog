@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- header::begin -->
+<head data-th-fragment="my-header(title,style)">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" type="text/css"
+        href="/webjars/Semantic-UI/2.4.1/semantic.css"
+        data-th-href="@{/webjars/Semantic-UI/semantic.min.css}"/>
+  <link rel="stylesheet" type="text/css" href="/assets/main.css" data-th-href="@{/assets/main.css}"/>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" data-th-href="@{/assets/favicon.ico}"/>
+  <title data-th-block="" data-th-replace="${title}">
+    MVC Blog template
+  </title>
+  <!--/* Per-page placeholder for additional links */-->
+  <style data-th-block="" data-th-replace="${style}">
+    /*
+      MVC blog comment template
+     */
+  </style>
+</head>
+<!-- header::end -->
+<body>
+<!-- footer::begin -->
+<footer data-th-fragment="my-footer" class="footer">
+  Maksim Kostromin &copy; 2020 &mdash; present | MIT License
+</footer>
+<!-- footer::end -->
+</body>
+</html>
