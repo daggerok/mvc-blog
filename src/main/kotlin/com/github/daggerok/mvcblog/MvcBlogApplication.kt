@@ -21,11 +21,9 @@ import java.util.stream.Collectors
 @Configuration
 class CommonMarkConfig {
 
-  @Bean
-  fun parser(): Parser = Parser.builder().build()
+  @Bean fun parser(): Parser = Parser.builder().build()
 
-  @Bean
-  fun htmlRenderer(): HtmlRenderer = HtmlRenderer.builder().build()
+  @Bean fun htmlRenderer(): HtmlRenderer = HtmlRenderer.builder().build()
 }
 
 @Service
@@ -61,17 +59,15 @@ class MarkdownRenderer(private val resourceLoader: ResourceLoader,
 @Controller
 class BlogPages(private val markdownRenderer: MarkdownRenderer) {
 
-  @GetMapping
-  fun homePageView() = "index"
+  @GetMapping fun homePageView() = "index-view"
 
-  @GetMapping("/blog")
-  fun postListView() = "blog/index"
+  @GetMapping("/blog") fun postListView() = "blog-post-list-view"
 
   @GetMapping("/blog/{id}")
   fun blogPostView(@PathVariable("id") id: String, model: Model) = model.run {
     this["id"] = id
     this["html"] = markdownRenderer("2020-04-30-hello.md")
-    "blog/post"
+    "blog-post-view"
   }
 }
 

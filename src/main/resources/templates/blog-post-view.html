@@ -2,7 +2,7 @@
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org"
       xmlns="http://www.w3.org/1999/xhtml">
-<head data-th-replace="components/dry-code :: my-header(~{::title},~{::style})">
+<head data-th-replace="dry-code.html :: my-header(~{::title},~{::style})">
   <title>blog post page</title>
   <style>
     /* comments part 2 */
@@ -11,10 +11,10 @@
 <body>
 <div class="content">
   <!-- begin -->
-  <h1>[[ ${id} ]] blog post page</h1>
+  <h1>[[${id}]] blog post page</h1>
   [(${html})]
   <!-- end -->
 </div>
-<footer data-th-replace="components/dry-code :: my-footer"></footer>
+<footer data-th-replace="dry-code.html :: my-footer"></footer>
 </body>
 </html>

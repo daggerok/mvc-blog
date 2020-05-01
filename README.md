@@ -3,6 +3,7 @@ Using commonmark, thymeleaf and spring-boot to build MVC markdown blog
 
 ## resources
 
+* [Thymeleaf unescaped html](https://www.baeldung.com/spring-thymeleaf-3#example)
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
 * [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.3.0.M4/maven-plugin/reference/html/)
 * [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.3.0.M4/maven-plugin/reference/html/#build-image)
